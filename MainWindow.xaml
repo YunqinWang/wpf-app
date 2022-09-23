@@ -5,12 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1000">
+        Title="MainWindow" Height="960" Width="1490">
     <Grid>
         <Grid Margin="30" Grid.Column="1" Grid.Row="2">
-
+               
             <Grid.RowDefinitions>
-                <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
 
@@ -18,13 +17,21 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-
-
             <StackPanel Grid.Row="0" Margin="0,0,0,0" Grid.RowSpan="2">
                 <Label HorizontalAlignment="Center">Image</Label>
                 <Button x:Name="btnAdd" Margin="0,5,0,0" Click="btnLoad_Click" Width="140" Height="25" Panel.ZIndex="-2" Content="Load Image"/>
+                <StackPanel Grid.Row="1" Margin="0,0,0,0" Grid.RowSpan="2" 
+                        MouseDown="Canvas_MouseDown" 
+                        MouseMove="Canvas_MouseMove" 
+                        MouseUp="Canvas_MouseUp">
+
+                    <Image x:Name="imgBox" HorizontalAlignment="Center" Margin="50,30,50,0" VerticalAlignment="Center" Stretch="UniformToFill" ScrollViewer.VerticalScrollBarVisibility="Disabled"/>
+                    <Canvas x:Name="rectCanvas" >
+                    </Canvas>
+
+                </StackPanel>
             </StackPanel>
-            <Image x:Name="imgBox" HorizontalAlignment="Center" Margin="27,67,0,0" Grid.Row="1" VerticalAlignment="Center" Stretch="Fill"/>
+
             
             
         </Grid>
