@@ -12,5 +12,4 @@ The project creates a simple interface with several buttons on the right side an
 4. recolor the rectangle
 
 ## Used Language, Library, Framework
-XAML, C#. I used [WPF application template provided by Visual Studio]
-https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0
+XAML, C#. I used [WPF application template provided by Visual Studio](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0)
